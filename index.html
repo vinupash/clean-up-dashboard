@@ -3,24 +3,250 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Dashboard</title>
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-clifford">
-      Hello world! cool
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsam
-      voluptate facere totam non hic veritatis assumenda accusantium, aliquam
-      omnis. Quibusdam aliquid ducimus nihil natus pariatur. Recusandae
-      laboriosam rerum est?
-    </p>
+
+  <body class="bg-mist-50">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-200 z-50 flex items-center px-6"
+    >
+      <h1 class="text-xl font-bold">Dashboard</h1>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="flex pt-16 h-screen">
+      <!-- Left Sidebar -->
+      <aside class="fixed left-0 top-16 bottom-0 w-[250px] overflow-y-auto">
+        <div class="p-2">
+          <!--<h2 class="text-sm font-semibold text-gray-400 uppercase mb-4">
+            Menu
+          </h2>-->
+
+          <!--<ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="block px-3 py-2 rounded-lg bg-gray-100 text-gray-900"
+              >
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="block px-3 py-2 rounded-lg hover:bg-gray-100">
+                Users
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="block px-3 py-2 rounded-lg hover:bg-gray-100">
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="block px-3 py-2 rounded-lg hover:bg-gray-100">
+                Settings
+              </a>
+            </li>
+          </ul>-->
+
+          <div
+            class="bg-linear-to-t from-[#0B6B2A] to-[#1E8E3E] rounded-xl w-full p-2 shadow-sm"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores harum cum deserunt quas, voluptates explicabo totam
+              dolore, cumque, vel architecto expedita tempore. Exercitationem
+              officiis amet soluta ad consectetur illo iusto!
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main
+        class="ml-[250px] mr-[400px] flex-1 h-[calc(100vh-64px)] overflow-y-auto p-2 scrollbar-hide space-y-5"
+      >
+        <!--<h2 class="text-2xl font-bold mb-6">Dashboard Overview</h2>-->
+
+        <!--<div
+          class="bg-white rounded-xl p-6 shadow-sm overflow-hidden bg-white bg-[url('./assets/images/image-1.png')] bg-cover bg-no-repeat bg-[top_left] sm:bg-[center_top] relative h-80"
+        >
+          <h3 class="text-lg font-semibold">Sales Overview</h3>
+        </div>-->
+
+        <div
+          class="bg-white rounded-xl shadow-sm overflow-hidden bg-[url('./assets/images/image-1.png')] bg-cover bg-no-repeat bg-[top_left] sm:bg-[center_top] relative"
+        >
+          <div
+            class="absolute inset-0 bg-linear-to-r from-[#0B6B2A]/100 to-transparent"
+          ></div>
+
+          <div class="relative z-10 px-6 py-8">
+            <div class="max-w-lg space-y-5 flex flex-col justify-start">
+              <div class="text-4xl/12 text-white font-bold">
+                Every Clean Action Creates a Better Tomorrow
+              </div>
+              <p class="text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                consectetur non ratione esse nihil
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-5 justify-center md:justify-start"
+              >
+                <button
+                  class="shrink-0 group flex items-center justify-center gap-2 py-3 px-6 text-xs font-normal hover:cursor-pointer transition-all duration-300 rounded-full border-0 bg-white outline-none focus:outline-none focus:ring-0 text-[#1A1A1A]"
+                >
+                  Start a Challenge
+
+                  <svg
+                    class="w-[18px] h-[18px] transition-transform duration-300 group-hover:rotate-45"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                  </svg>
+                </button>
+                <button
+                  class="shrink-0 group flex items-center justify-center gap-2 py-3 px-6 text-xs font-normal hover:cursor-pointer transition-all duration-300 rounded-full border-0 bg-white outline-none focus:outline-none focus:ring-0 text-[#1A1A1A]"
+                >
+                  How it Works
+
+                  <svg
+                    class="w-[18px] h-[18px] transition-transform duration-300 group-hover:rotate-45"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-4 gap-5">
+          <div
+            class="relative bg-white rounded-xl p-4 border border-[#1E8E3E]/30 outline outline-2 outline-transparent hover:outline-[#34C759] hover:outline-offset-2 transition-all duration-300 flex flex-row items-center gap-3 cursor-pointer"
+          >
+            <div class="w-full space-y-1">
+              <p class="text-gray-500 text-xs">Total Users</p>
+              <h3 class="text-2xl font-semibold">1,250</h3>
+              <p class="text-gray-500 text-sm">Total Users</p>
+            </div>
+            <!--<div class="h-15 w-15 shrink-0 border-1"></div>-->
+          </div>
+
+          <div
+            class="relative bg-white rounded-xl p-4 border border-[#1E8E3E]/30 outline outline-2 outline-transparent hover:outline-[#34C759] hover:outline-offset-2 transition-all duration-300 flex flex-row items-center gap-3 cursor-pointer"
+          >
+            <div class="w-full space-y-1">
+              <p class="text-gray-500 text-xs">Total Users</p>
+              <h3 class="text-2xl font-semibold">1,250</h3>
+              <p class="text-gray-500 text-sm">Total Users</p>
+            </div>
+            <!--<div class="h-15 w-15 shrink-0 border-1"></div>-->
+          </div>
+
+          <div
+            class="relative bg-white rounded-xl p-4 border border-[#1E8E3E]/30 outline outline-2 outline-transparent hover:outline-[#34C759] hover:outline-offset-2 transition-all duration-300 flex flex-row items-center gap-3 cursor-pointer"
+          >
+            <div class="w-full space-y-1">
+              <p class="text-gray-500 text-xs">Total Users</p>
+              <h3 class="text-2xl font-semibold">1,250</h3>
+              <p class="text-gray-500 text-sm">Total Users</p>
+            </div>
+            <!--<div class="h-15 w-15 shrink-0 border-1"></div>-->
+          </div>
+
+          <div
+            class="relative bg-white rounded-xl p-4 border border-[#1E8E3E]/30 outline outline-2 outline-transparent hover:outline-[#34C759] hover:outline-offset-2 transition-all duration-300 flex flex-row items-center gap-3 cursor-pointer"
+          >
+            <div class="w-full space-y-1">
+              <p class="text-gray-500 text-xs">Total Users</p>
+              <h3 class="text-2xl font-semibold">1,250</h3>
+              <p class="text-gray-500 text-sm">Total Users</p>
+            </div>
+            <!--<div class="h-15 w-15 shrink-0 border-1"></div>-->
+          </div>
+        </div>
+
+        <!-- Dummy Content -->
+        <div class="space-y-5">
+          <div class="bg-white rounded-xl p-6 shadow-sm h-80">
+            <h3 class="text-lg font-semibold">Sales Overview</h3>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm h-80">
+            <h3 class="text-lg font-semibold">Recent Orders</h3>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm h-80">
+            <h3 class="text-lg font-semibold">Users Overview</h3>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm h-80">
+            <h3 class="text-lg font-semibold">Activity</h3>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Promotion Sidebar -->
+      <aside
+        class="fixed right-0 top-16 bottom-0 w-[400px] overflow-y-auto p-2"
+      >
+        <div class="bg-red-500 w-full p-2 rounded-xl">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            harum cum deserunt quas, voluptates explicabo totam dolore, cumque,
+            vel architecto expedita tempore. Exercitationem officiis amet soluta
+            ad consectetur illo iusto!
+          </p>
+          <h2 class="text-lg font-semibold mb-5">Promotions</h2>
+
+          <div class="space-y-4">
+            <div class="bg-gray-100 rounded-xl p-5">
+              <h3 class="font-semibold">Promotion 01</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Your promotion content goes here.
+              </p>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl p-5">
+              <h3 class="font-semibold">Promotion 02</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Your promotion content goes here.
+              </p>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl p-5">
+              <h3 class="font-semibold">Promotion 03</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Your promotion content goes here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
